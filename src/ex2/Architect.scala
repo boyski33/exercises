@@ -1,3 +1,5 @@
+//Боян Кушлев F75128
+
 package ex2
 
 sealed trait Shape
@@ -28,14 +30,14 @@ class Architect {
    *  - Rectangle: a * b, where a and b are both sides
    *  - Trapezoid: (a + b) * h / 2, where a and b are the parallel sides and h is the height between them
    *  - Cube: always return -1
-   *  
+   *
    *  Hint: for triangles use the max function
    */
   def area(s: Shape): Double = ???
 
   /*
    *  Returns the number of rectangular triangles in given list of shapes
-   *  
+   *
    *  Hint: use the triangleType function
    */
   def findRectangulars(shapes: List[Shape]): Int = {
