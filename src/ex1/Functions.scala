@@ -17,7 +17,7 @@ object Functions {
     loop(0, data)
   }
 
-  def ifelse(cond: Boolean, onTrue: Int, onFalse: Int): Int = {
+  def ifelse(cond: Boolean, onTrue: => Int, onFalse: => Int): Int = {
     if (cond) return onTrue
     onFalse
   }
